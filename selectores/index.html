@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectores</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Selectores CSS</h1>
+    <p>
+      Los selectores CSS son una forma de seleccionar los elementos HTML a los
+      que se les aplicará un estilo.
+    </p>
+
+    <h2>Tipos de selectores</h2>
+    <ul>
+      <li>Selector universal</li>
+      <li>Selector de tipo</li>
+      <li>Selector de clase</li>
+      <li>Selector de ID</li>
+      <li>Selector de atributo</li>
+      <li>Selectores combinadores</li>
+    </ul>
+
+    <h2>Selector universal</h2>
+    <p>
+      El selector universal selecciona todos los elementos de la página. Se
+      utiliza el asterisco <code>*</code> para indicar que se aplicará a todos
+      los elementos.
+    </p>
+    <p>
+      <code>* { color: red; }</code>
+    </p>
+
+    <h2>Selector de tipo</h2>
+    <p>
+      El selector de tipo selecciona todos los elementos de un tipo específico.
+      Se utiliza el nombre del elemento para indicar que se aplicará a todos los
+      elementos de ese tipo.
+    </p>
+    <p>
+      <code>h1 { color: red; }</code>
+    </p>
+
+    <h2>Selector de clase</h2>
+    <p>
+      El selector de clase selecciona todos los elementos que tengan un atributo
+      <code>class</code> con el valor especificado. Se utiliza el nombre de la
+      clase precedido por un punto <code>.</code> para indicar que se aplicará a
+      todos los elementos que tengan esa clase.
+    </p>
+    <p>
+      <code>.clase { color: red; }</code>
+    </p>
+
+    <h2>Selector de ID</h2>
+    <p>
+      El selector de ID selecciona el elemento que tenga un atributo
+      <code>id</code> con el valor especificado. Se utiliza el nombre del ID
+      precedido por un numeral <code>#</code> para indicar que se aplicará a ese
+      elemento.
+    </p>
+    <p>
+      <code>#id { color: red; }</code>
+    </p>
+
+    <h2>Selector de atributo</h2>
+    <p>
+      El selector de atributo selecciona todos los elementos que tengan un
+      atributo con el valor especificado. Se utiliza el nombre del atributo
+      entre corchetes <code>[]</code> para indicar que se aplicará a todos los
+      elementos que tengan ese atributo.
+    </p>
+    <p>
+      para indicar que se aplicará a todos los elementos que tengan ese
+      atributo. <br /><br />
+      <code>[atributo] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos h2 que tengan ese
+      atributo <br /><br />
+      <code>h2[atributo] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que tengan ese atributo
+      con ese valor <br /><br />
+      <code>[atributo="valor"] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que empiecen con ese
+      valor <br /><br />
+      <code>[atributo^="valor"] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que terminen con ese
+      valor <br /><br />
+      <code>[atributo$="valor"] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que contengan ese valor
+      <br /><br />
+      <code>[atributo*="valor"] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que contengan ese valor
+      separado por espacios <br /><br />
+      <code>[atributo~="valor"] { color: red; }</code> <br /><br />
+
+      para indicar que se aplicará a todos los elementos que contengan ese valor
+      separado por guiones <br /><br />
+      <code>[atributo|="valor"] { color: red; }</code> <br /><br />
+    </p>
+
+    <h2>Selectores combinadores</h2>
+    <p>
+      Los selectores combinadores son una forma de seleccionar elementos
+      específicos de acuerdo a su relación con otros elementos.
+    </p>
+    <p>
+      Esto es un selector de descendencia sirve para seleccionar todos los
+      elementos que estén dentro de otro elemento.<br /><br />
+      <code>div p { color: red; }</code> <br /><br />
+      Selector de hijo sirve para seleccionar todos los elementos que sean hijos
+      directos de otro elemento por ejemplo todos los elementos p que sean hijos
+      directos de un elemento div.
+      <br /><br />
+      <code>div > p { color: red; }</code> <br /><br />
+      Selector de hermano adyacente Sirve para seleccionar todos los elementos
+      que sean hermanos adyacentes de otro elemento por ejemplo todos los
+      elementos p que sean hermanos adyacentes de un elemento div.
+      <br /><br />
+      <code>div + p { color: red; }</code> <br /><br />
+      Selector de hermano general Sirve para seleccionar todos los elementos que
+      sean hermanos generales de otro elemento por ejemplo todos los elementos p
+      que sean hermanos generales de un elemento div.
+      <br /><br />
+      <code>div ~ p { color: red; }</code> <br /><br />
+    </p>
+  </body>
+</html>
