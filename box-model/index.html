@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Box model</h1>
+    <p>
+      El modelo de cajas es la forma en que se representan los elementos HTML en
+      el navegador. Cada elemento se representa como una caja rectangular.
+    </p>
+    <p>
+      El modelo de cajas se compone de cuatro partes: el contenido, el padding,
+      el borde y el margen.
+    </p>
+
+    <h2>Colapso de margenes elementos adyacentes</h2>
+    <p>
+      Cuando dos elementos con margenes verticales se encuentran, el margen más
+      grande se aplica a ambos elementos.
+    </p>
+    <h3>Ejemplo colapso</h3>
+    <p>
+      En el ejemplo se aprecian dos cajas en las que sus margenes chocan entre
+      si, una tiene 30px de margin-bottom y la otra 20px de margin-top, pero el
+      margen que se aplica es de 30px, el más grande de los dos, esto en lugar
+      de los 50px que sería la suma de ambos.
+    </p>
+
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+
+    <h3>solución colapso</h3>
+    <p>
+      Para soluccionar el colapso se puede convertir la caja uno a un elemento
+      inline-block.
+    </p>
+
+    <div class="box-1 inline-block"></div>
+    <div class="box-2"></div>
+
+    <h2>Colapso entre padre e hijo</h2>
+    <p>
+      Cuando un elemento hijo tiene un margen superior el padre absorbe el
+      margen del hijo como si fuera suyo.
+    </p>
+    <h3>Ejemplo colapso</h3>
+    <p>
+      En el ejemplo se aprecian dos cajas una dentro de otra, la caja hijo tiene
+      un margen superior de 30px, pero el padre absorbe el margen del hijo como
+      si fuera suyo, por lo que el margen superior del padre es de 30px en
+      lugar.
+    </p>
+    <div class="padre">
+      <div class="hijo">Soy el hijo</div>
+    </div>
+
+    <h3>solución colapso</h3>
+    <p>
+      Para soluccionar el colapso se puede aplicar al padre un padding o un
+      borde esto hará que no se toquen los margenes.
+    </p>
+
+    <div class="padre padding">
+      <div class="hijo">Soy el hijo</div>
+    </div>
+
+    <h2>Box sizing</h2>
+
+    <p>
+      El box sizing es una propiedad que permite cambiar el comportamiento de
+      las cajas, por defecto el box sizing es content-box, esto quiere decir que
+      el ancho y alto que se le da a la caja es solo del contenido, si se le
+      agrega padding o borde el ancho y alto de la caja aumentará.
+    </p>
+
+    <h3>border-box</h3>
+    <p>
+      Con border-box el ancho y alto que se le da a la caja es del contenido,
+      padding y borde.
+    </p>
+  </body>
+</html>
