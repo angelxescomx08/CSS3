@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(242, 87, 87);
+  box-shadow: 10px 10px 10px 10px rgb(85, 73, 73);
+}
+
+.goku {
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(10px 10px 10px blue);
+}
