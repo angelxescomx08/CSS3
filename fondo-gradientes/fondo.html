@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fondo</title>
+  </head>
+  <body>
+    <h2>Background</h2>
+    <p>
+      Background es un shorthand para definir todas las propiedades de fondo en
+      una sola declaración.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background: color posicion tamaño repetición
+      adjunto origen;
+    </p>
+    <p>
+      <strong>Propiedades:</strong>
+    </p>
+    <ul>
+      <li><strong>color:</strong> color de fondo</li>
+      <li><strong>posicion:</strong> posición del fondo</li>
+      <li><strong>tamaño:</strong> tamaño del fondo</li>
+      <li><strong>repetición:</strong> repetición del fondo</li>
+      <li>
+        <strong>adjunto:</strong> si el fondo se desplaza con el contenido o no
+      </li>
+      <li>
+        <strong>origen:</strong> si el fondo se desplaza con el contenido o no
+      </li>
+    </ul>
+    <p>
+      <strong>Valores:</strong>
+    </p>
+    <ul>
+      <li>
+        <strong>color:</strong> nombre del color, valor hexadecimal, rgb, rgba,
+        hsl, hsla, transparente, currentColor
+      </li>
+      <li>
+        <strong>posicion:</strong> top, bottom, left, right, center, x% y%
+      </li>
+      <li><strong>tamaño:</strong> auto, cover, contain, x% y%</li>
+      <li>
+        <strong>repetición:</strong> repeat, repeat-x, repeat-y, no-repeat
+      </li>
+      <li><strong>adjunto:</strong> scroll, fixed, local</li>
+      <li><strong>origen:</strong> padding-box, border-box, content-box</li>
+    </ul>
+    <p>
+      <strong>Ejemplo:</strong>
+    </p>
+    <pre>
+      <code>
+        body {
+          background: #0000ff url("img_tree.png") no-repeat fixed center;
+        }
+      </code>
+    </pre>
+    <p>
+      Tambien se puede usar background-image, background-color, background-size,
+      background-repeat, background-attachment, background-position,
+      background-origin, background-clip
+    </p>
+    <h3>background-image</h3>
+    <p>
+      permite establecer una imagen como fondo de un elemento. Por defecto se
+      repite en ambas direcciones.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background-image: url | none | initial |
+      inherit;
+    </p>
+    <p>background-image: url("img_tree.png") | none | initial | inherit;</p>
+    <h3>background-color</h3>
+    <p>
+      establece el color de fondo de un elemento. Por defecto es transparente.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background-color: color | transparent | initial
+      | inherit;
+    </p>
+    <p>background-color: #ffffff | transparent | initial | inherit;</p>
+    <h3>background-size</h3>
+    <p>establece el tamaño de la imagen de fondo. Por defecto es auto.</p>
+    <p>
+      <strong>Sintaxis:</strong> background-size: auto | length | cover |
+      contain | initial | inherit;
+    </p>
+    <p>background-size: auto | length | cover | contain | initial | inherit;</p>
+    <h3>background-repeat</h3>
+    <p>
+      establece si la imagen de fondo se repite o no. Por defecto es repeat.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background-repeat: repeat | repeat-x | repeat-y
+      | no-repeat | initial | inherit;
+    </p>
+    <p>
+      background-repeat: repeat | repeat-x | repeat-y | no-repeat | initial |
+      inherit;
+    </p>
+    <h3>background-attachment</h3>
+    <p>
+      establece si la imagen de fondo se desplaza con el contenido o no. Por
+      defecto es scroll.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background-attachment: scroll | fixed | local |
+      initial | inherit;
+    </p>
+    <p>background-attachment: scroll | fixed | local | initial | inherit;</p>
+    <h3>background-position</h3>
+    <p>establece la posición de la imagen de fondo. Por defecto es 0% 0%.</p>
+    <p>
+      <strong>Sintaxis:</strong> background-position: position | initial |
+      inherit;
+    </p>
+    <p>background-position: position | initial | inherit;</p>
+    <h3>background-origin</h3>
+    <p>establece la posición de la imagen de fondo. Por defecto es 0% 0%.</p>
+    <p>
+      <strong>Sintaxis:</strong> background-origin: padding-box | border-box |
+      content-box | initial | inherit;
+    </p>
+    <p>
+      background-origin: padding-box | border-box | content-box | initial |
+      inherit;
+    </p>
+    <h3>background-clip</h3>
+    <p>establece la posición de la imagen de fondo. Por defecto es 0% 0%.</p>
+    <p>
+      <strong>Sintaxis:</strong> background-clip: border-box | padding-box |
+      content-box | initial | inherit;
+    </p>
+    <p>
+      background-clip: border-box | padding-box | content-box | initial |
+      inherit;
+    </p>
+    <h2>Gradientes</h2>
+    <p>
+      Los gradientes son imágenes generadas por el navegador. Se pueden usar
+      como valor de background-image.
+    </p>
+    <p>
+      <strong>Sintaxis:</strong> background-image: linear-gradient |
+      radial-gradient | repeating-linear-gradient | repeating-radial-gradient |
+      initial | inherit;
+    </p>
+    <p>
+      <strong>Valores:</strong>
+    </p>
+    <ul>
+      <li>
+        <strong>linear-gradient:</strong> dirección, color1, color2, color3,
+        color4
+      </li>
+      <li>
+        <strong>radial-gradient:</strong> forma, tamaño, posición, color1,
+        color2, color3, color4
+      </li>
+      <li>
+        <strong>repeating-linear-gradient:</strong> dirección, color1, color2,
+        color3, color4
+      </li>
+      <li>
+        <strong>repeating-radial-gradient:</strong> forma, tamaño, posición,
+        color1, color2, color3, color4
+      </li>
+    </ul>
+    <p>
+      <strong>Ejemplo:</strong>
+    </p>
+    <pre>
+      <code>
+        body {
+          background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+      </code>
+    </pre>
+  </body>
+</html>
