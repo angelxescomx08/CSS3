@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espeficidad, herencia y cascada</title>
+  </head>
+  <body>
+    <h1>Espeficidad, herencia y cascada</h1>
+    <p>
+      La espeficidad es la forma en la que el navegador decide que regla de
+      estilo aplicar cuando hay varias reglas que se aplican al mismo elemento.
+    </p>
+    <p>
+      La espeficidad se calcula sumando los puntos de cada selector. Los
+      selectores se ordenan de mayor a menor espeficidad:
+    </p>
+    <ul>
+      <li>Estilos en línea (1000 puntos)</li>
+      <li>IDs (100 puntos)</li>
+      <li>Clases, pseudo-clases, atributos (10 puntos)</li>
+      <li>Elementos, pseudo-elementos (1 punto)</li>
+    </ul>
+
+    <h2>Cascada</h2>
+    <p>La cascada es el orden en el que se aplican las reglas de estilo.</p>
+
+    <h2>Herencia</h2>
+    <p>
+      La herencia es la forma en la que los elementos hijos heredan las
+      propiedades de los elementos padres.
+    </p>
+    <p>
+      No todas las propiedades se heredan. Las propiedades que se heredan son
+      aquellas que tienen sentido que se hereden, como el color de texto o el
+      tamaño de fuente.
+    </p>
+    <p>
+      Se puede forzar a heredar una propiedad con el valor <code>inherit</code>.
+      por ejemplo: <br /><br />
+
+      <code> p { color: red; } p span { color: inherit; } </code>
+    </p>
+  </body>
+</html>
